@@ -1,0 +1,10 @@
+C:\Users\bella\source\repos\Gestore di Entrate\Gestore di Entrate\bin\Debug\Gestore di Entrate.exe.config
+C:\Users\bella\source\repos\Gestore di Entrate\Gestore di Entrate\bin\Debug\Gestore di Entrate.exe
+C:\Users\bella\source\repos\Gestore di Entrate\Gestore di Entrate\bin\Debug\Gestore di Entrate.pdb
+C:\Users\bella\source\repos\Gestore di Entrate\Gestore di Entrate\obj\Debug\Gestore di Entrate.csproj.AssemblyReference.cache
+C:\Users\bella\source\repos\Gestore di Entrate\Gestore di Entrate\obj\Debug\Gestore_di_Entrate.Form1.resources
+C:\Users\bella\source\repos\Gestore di Entrate\Gestore di Entrate\obj\Debug\Gestore_di_Entrate.Properties.Resources.resources
+C:\Users\bella\source\repos\Gestore di Entrate\Gestore di Entrate\obj\Debug\Gestore di Entrate.csproj.GenerateResource.cache
+C:\Users\bella\source\repos\Gestore di Entrate\Gestore di Entrate\obj\Debug\Gestore di Entrate.csproj.CoreCompileInputs.cache
+C:\Users\bella\source\repos\Gestore di Entrate\Gestore di Entrate\obj\Debug\Gestore di Entrate.exe
+C:\Users\bella\source\repos\Gestore di Entrate\Gestore di Entrate\obj\Debug\Gestore di Entrate.pdb

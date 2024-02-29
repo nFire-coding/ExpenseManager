@@ -1,0 +1,6 @@
+entrata,25,Gen
+uscita,25,Gen
+entrata,15,Feb
+uscita,15,Feb
+entrata,30,Mar
+uscita,30,Mar
