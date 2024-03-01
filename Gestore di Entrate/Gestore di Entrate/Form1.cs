@@ -41,7 +41,6 @@ namespace Gestore_di_Entrate
                 entrata.Mese = meseUtente.Text;
                 Dati.AggiungiEntrata(entrata);
             }
-            }
             //Uscita
             if (isUscita.Checked)
             {
