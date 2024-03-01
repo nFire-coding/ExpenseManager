@@ -15,3 +15,6 @@ C:\Users\admin\Source\Repos\zGiuly\ExpenseManager\Gestore di Entrate\Gestore di 
 C:\Users\admin\Source\Repos\zGiuly\ExpenseManager\Gestore di Entrate\Gestore di Entrate\obj\Debug\Gestore di Entrate.csproj.CoreCompileInputs.cache
 C:\Users\admin\Source\Repos\zGiuly\ExpenseManager\Gestore di Entrate\Gestore di Entrate\obj\Debug\Gestore di Entrate.exe
 C:\Users\admin\Source\Repos\zGiuly\ExpenseManager\Gestore di Entrate\Gestore di Entrate\obj\Debug\Gestore di Entrate.pdb
+C:\Users\admin\Source\Repos\zGiuly\ExpenseManager\Gestore di Entrate\Gestore di Entrate\bin\Debug\Gestore di Entrate.exe.config
+C:\Users\admin\Source\Repos\zGiuly\ExpenseManager\Gestore di Entrate\Gestore di Entrate\bin\Debug\Gestore di Entrate.exe
+C:\Users\admin\Source\Repos\zGiuly\ExpenseManager\Gestore di Entrate\Gestore di Entrate\bin\Debug\Gestore di Entrate.pdb
