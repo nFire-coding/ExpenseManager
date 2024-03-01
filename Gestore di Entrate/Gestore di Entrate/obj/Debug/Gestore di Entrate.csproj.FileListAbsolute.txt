@@ -8,3 +8,10 @@ C:\Users\bella\source\repos\Gestore di Entrate\Gestore di Entrate\obj\Debug\Gest
 C:\Users\bella\source\repos\Gestore di Entrate\Gestore di Entrate\obj\Debug\Gestore di Entrate.csproj.CoreCompileInputs.cache
 C:\Users\bella\source\repos\Gestore di Entrate\Gestore di Entrate\obj\Debug\Gestore di Entrate.exe
 C:\Users\bella\source\repos\Gestore di Entrate\Gestore di Entrate\obj\Debug\Gestore di Entrate.pdb
+C:\Users\admin\Source\Repos\zGiuly\ExpenseManager\Gestore di Entrate\Gestore di Entrate\obj\Debug\Gestore di Entrate.csproj.AssemblyReference.cache
+C:\Users\admin\Source\Repos\zGiuly\ExpenseManager\Gestore di Entrate\Gestore di Entrate\obj\Debug\Gestore_di_Entrate.Form1.resources
+C:\Users\admin\Source\Repos\zGiuly\ExpenseManager\Gestore di Entrate\Gestore di Entrate\obj\Debug\Gestore_di_Entrate.Properties.Resources.resources
+C:\Users\admin\Source\Repos\zGiuly\ExpenseManager\Gestore di Entrate\Gestore di Entrate\obj\Debug\Gestore di Entrate.csproj.GenerateResource.cache
+C:\Users\admin\Source\Repos\zGiuly\ExpenseManager\Gestore di Entrate\Gestore di Entrate\obj\Debug\Gestore di Entrate.csproj.CoreCompileInputs.cache
+C:\Users\admin\Source\Repos\zGiuly\ExpenseManager\Gestore di Entrate\Gestore di Entrate\obj\Debug\Gestore di Entrate.exe
+C:\Users\admin\Source\Repos\zGiuly\ExpenseManager\Gestore di Entrate\Gestore di Entrate\obj\Debug\Gestore di Entrate.pdb
