@@ -40,9 +40,9 @@
             this.graficoDati = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.meseUtente = new System.Windows.Forms.TextBox();
             this.isEntrata = new System.Windows.Forms.CheckBox();
             this.isUscita = new System.Windows.Forms.CheckBox();
+            this.meseComboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.graficoDati)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,13 +128,6 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Mese";
             // 
-            // meseUtente
-            // 
-            this.meseUtente.Location = new System.Drawing.Point(89, 103);
-            this.meseUtente.Name = "meseUtente";
-            this.meseUtente.Size = new System.Drawing.Size(335, 20);
-            this.meseUtente.TabIndex = 8;
-            // 
             // isEntrata
             // 
             this.isEntrata.AutoSize = true;
@@ -155,15 +148,23 @@
             this.isUscita.Text = "uscita";
             this.isUscita.UseVisualStyleBackColor = true;
             // 
+            // meseComboBox
+            // 
+            this.meseComboBox.FormattingEnabled = true;
+            this.meseComboBox.Location = new System.Drawing.Point(89, 103);
+            this.meseComboBox.Name = "meseComboBox";
+            this.meseComboBox.Size = new System.Drawing.Size(335, 21);
+            this.meseComboBox.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(845, 507);
+            this.Controls.Add(this.meseComboBox);
             this.Controls.Add(this.isUscita);
             this.Controls.Add(this.isEntrata);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.meseUtente);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.graficoDati);
             this.Controls.Add(this.acquisciSpesa);
@@ -189,9 +190,9 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart graficoDati;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox meseUtente;
         private System.Windows.Forms.CheckBox isEntrata;
         private System.Windows.Forms.CheckBox isUscita;
+        private System.Windows.Forms.ComboBox meseComboBox;
     }
 }
 

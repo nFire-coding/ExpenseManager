@@ -6,11 +6,19 @@ using System.Threading.Tasks;
 
 namespace Gestore_di_Entrate.Modules
 {
-    interface ITransaction
+    enum Mesi
     {
-        string Name { get; set; }
-        double Value { get; set; }
-        
-        Mesi Mese { get; set; }
+        Gen,
+        Feb,
+        Mar,
+        Apr,
+        Mag,
+        Giu,
+        Lug,
+        Ago,
+        Set,
+        Ott,
+        Nov,
+        Dic
     }
 }

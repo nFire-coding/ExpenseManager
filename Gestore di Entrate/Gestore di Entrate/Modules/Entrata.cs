@@ -10,12 +10,12 @@ namespace Gestore_di_Entrate.Modules
     {
         private double value;
         private string name;
-        private string mese;
+        private Mesi mese;
 
         public double Value { get { return value; } set { this.value = value; } }
 
         public string Name { get { return name; } set { name = value; } }
 
-        public string Mese { get { return mese; } set { mese = value; } }
+        public Mesi Mese { get { return mese; } set { mese = value; } }
     }
 }

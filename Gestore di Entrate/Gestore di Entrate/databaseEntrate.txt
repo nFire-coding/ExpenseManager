@@ -6,6 +6,3 @@ entrata,30,Mar
 uscita,30,Mar
 entrata,500,Ago
 uscita,700,Ago
-entrata,500,Ago
-uscita,909,Ago
-uscita,90000,Dic
