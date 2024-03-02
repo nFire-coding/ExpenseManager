@@ -39,7 +39,7 @@ namespace Gestore_di_Entrate.Modules
 
             foreach (DataPoint corrente in grafico.Series["entrate"].Points)
             {
-                if (corrente.AxisLabel.Equals(entrata.Mese))
+                if (corrente.AxisLabel.Equals(entrata.Mese.ToString()))
                 {
                     corrente.YValues[0] = corrente.YValues[0] + entrata.Value;
                 }
@@ -54,7 +54,7 @@ namespace Gestore_di_Entrate.Modules
 
             foreach (DataPoint corrente in grafico.Series["uscite"].Points)
             {
-                if (corrente.AxisLabel.Equals(uscita.Mese))
+                if (corrente.AxisLabel.Equals(uscita.Mese.ToString()))
                 {
                     corrente.YValues[0] = corrente.YValues[0] + uscita.Value;
                 }
@@ -214,10 +214,6 @@ namespace Gestore_di_Entrate.Modules
 
         private void AggiornaChart()
         {
-            grafico.ChartAreas[0].AxisX.Minimum = double.NaN;
-            grafico.ChartAreas[0].AxisX.Maximum = double.NaN;
-
-            grafico.Invalidate();
             grafico.Update();
             grafico.Refresh(); 
         }

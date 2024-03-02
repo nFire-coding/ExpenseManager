@@ -57,6 +57,7 @@
     <Compile Include="Modules\Entrata.cs" />
     <Compile Include="Modules\GestoreDati.cs" />
     <Compile Include="Modules\ITransaction.cs" />
+    <Compile Include="Modules\Mesi.cs" />
     <Compile Include="Modules\Uscita.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

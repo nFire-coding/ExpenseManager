@@ -11,6 +11,6 @@ namespace Gestore_di_Entrate.Modules
         string Name { get; set; }
         double Value { get; set; }
         
-        string Mese { get; set; }
+        Mesi Mese { get; set; }
     }
 }

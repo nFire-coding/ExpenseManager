@@ -30,6 +30,19 @@ namespace Gestore_di_Entrate
             InitializeComponent();
             // Inizializza l'istanza di GestoreDati con un riferimento al graficoDati.
             Dati = new GestoreDati(graficoDati);
+            InizializzaComboBox();
+        }
+
+        private void InizializzaComboBox()
+        {
+            Mesi[] mesi = (Mesi[])Enum.GetValues(typeof(Mesi)); //Creo un array con tutti gli elementi del enum mesi
+
+            foreach (var item in mesi)
+            {
+                meseComboBox.Items.Add(item);
+            }
+
+            meseComboBox.SelectedItem = 0;
         }
 
         /// <summary>
@@ -42,12 +55,11 @@ namespace Gestore_di_Entrate
             try
             {
                 string nomeDellaSpesa = spesaUtente.Text;
-                string mese = meseUtente.Text;
                 double valoreDellaSpesa = Double.Parse(valoreSpesaUtente.Text);
+                
 
                 spesaUtente.Text = "";
                 valoreSpesaUtente.Text = "";
-                meseUtente.Text = "";
 
                 // Controlla se sia stato selezionato sia 'Entrata' che 'Uscita'.
                 if (isEntrata.Checked && isUscita.Checked)
@@ -63,13 +75,25 @@ namespace Gestore_di_Entrate
                     return;
                 }
 
+                // Controllo se è selezionato un mese
+                if(meseComboBox.SelectedItem == null)
+                {
+                    MessageBox.Show("Non hai selezionato un mese", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                //Converto item della combo box nel emum corrispondente
+                Mesi meseSelezionato = (Mesi)meseComboBox.SelectedItem;
+
                 // Se è selezionata l'opzione 'Entrata', aggiunge un'entrata.
                 if (isEntrata.Checked)
                 {
                     var entrata = new Entrata();
                     entrata.Name = nomeDellaSpesa;
                     entrata.Value = valoreDellaSpesa;
-                    entrata.Mese = meseUtente.Text;
+
+                    entrata.Mese = meseSelezionato;
+
                     Dati.AggiungiEntrata(entrata);
                 }
 
@@ -79,7 +103,9 @@ namespace Gestore_di_Entrate
                     var uscita = new Uscita();
                     uscita.Name = nomeDellaSpesa;
                     uscita.Value = valoreDellaSpesa;
-                    uscita.Mese = meseUtente.Text;
+
+                    uscita.Mese = meseSelezionato;
+
                     Dati.AggiungiUscita(uscita);
                 }
 

@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.spesaUtente = new System.Windows.Forms.TextBox();
             this.valoreSpesaUtente = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,9 +40,9 @@
             this.graficoDati = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.meseUtente = new System.Windows.Forms.TextBox();
             this.isEntrata = new System.Windows.Forms.CheckBox();
             this.isUscita = new System.Windows.Forms.CheckBox();
+            this.meseComboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.graficoDati)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,22 +90,22 @@
             // 
             // graficoDati
             // 
-            chartArea1.Name = "ChartArea1";
-            this.graficoDati.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.graficoDati.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.graficoDati.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.graficoDati.Legends.Add(legend2);
             this.graficoDati.Location = new System.Drawing.Point(12, 164);
             this.graficoDati.Name = "graficoDati";
-            series1.ChartArea = "ChartArea1";
-            series1.Color = System.Drawing.Color.Lime;
-            series1.Legend = "Legend1";
-            series1.Name = "entrate";
-            series2.ChartArea = "ChartArea1";
-            series2.Color = System.Drawing.Color.Red;
-            series2.Legend = "Legend1";
-            series2.Name = "uscite";
-            this.graficoDati.Series.Add(series1);
-            this.graficoDati.Series.Add(series2);
+            series3.ChartArea = "ChartArea1";
+            series3.Color = System.Drawing.Color.Lime;
+            series3.Legend = "Legend1";
+            series3.Name = "entrate";
+            series4.ChartArea = "ChartArea1";
+            series4.Color = System.Drawing.Color.Red;
+            series4.Legend = "Legend1";
+            series4.Name = "uscite";
+            this.graficoDati.Series.Add(series3);
+            this.graficoDati.Series.Add(series4);
             this.graficoDati.Size = new System.Drawing.Size(678, 318);
             this.graficoDati.TabIndex = 5;
             this.graficoDati.Text = "grafico";
@@ -128,13 +128,6 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Mese";
             // 
-            // meseUtente
-            // 
-            this.meseUtente.Location = new System.Drawing.Point(89, 103);
-            this.meseUtente.Name = "meseUtente";
-            this.meseUtente.Size = new System.Drawing.Size(335, 20);
-            this.meseUtente.TabIndex = 8;
-            // 
             // isEntrata
             // 
             this.isEntrata.AutoSize = true;
@@ -155,15 +148,23 @@
             this.isUscita.Text = "uscita";
             this.isUscita.UseVisualStyleBackColor = true;
             // 
+            // meseComboBox
+            // 
+            this.meseComboBox.FormattingEnabled = true;
+            this.meseComboBox.Location = new System.Drawing.Point(89, 103);
+            this.meseComboBox.Name = "meseComboBox";
+            this.meseComboBox.Size = new System.Drawing.Size(335, 21);
+            this.meseComboBox.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(845, 507);
+            this.Controls.Add(this.meseComboBox);
             this.Controls.Add(this.isUscita);
             this.Controls.Add(this.isEntrata);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.meseUtente);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.graficoDati);
             this.Controls.Add(this.acquisciSpesa);
@@ -189,9 +190,9 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart graficoDati;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox meseUtente;
         private System.Windows.Forms.CheckBox isEntrata;
         private System.Windows.Forms.CheckBox isUscita;
+        private System.Windows.Forms.ComboBox meseComboBox;
     }
 }
 
