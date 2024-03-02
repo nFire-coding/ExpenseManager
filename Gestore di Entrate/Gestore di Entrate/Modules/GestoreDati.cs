@@ -39,7 +39,6 @@ namespace Gestore_di_Entrate.Modules
 
             foreach (DataPoint corrente in grafico.Series["entrate"].Points)
             {
-                Debug.WriteLine(corrente.AxisLabel + " " + corrente.YValues[0]);
                 if (corrente.AxisLabel.Equals(entrata.Mese))
                 {
                     corrente.YValues[0] = corrente.YValues[0] + entrata.Value;
@@ -55,7 +54,6 @@ namespace Gestore_di_Entrate.Modules
 
             foreach (DataPoint corrente in grafico.Series["uscite"].Points)
             {
-                Debug.WriteLine(corrente.AxisLabel + " " + corrente.YValues[0]);
                 if (corrente.AxisLabel.Equals(uscita.Mese))
                 {
                     corrente.YValues[0] = corrente.YValues[0] + uscita.Value;
@@ -80,7 +78,6 @@ namespace Gestore_di_Entrate.Modules
 
             foreach (DataPoint corrente in grafico.Series["entrate"].Points)
             {
-                Debug.WriteLine(corrente.AxisLabel + " " + corrente.YValues[0]);
                 if (corrente.AxisLabel.Equals(instance.Mese))
                 {
                     corrente.YValues[0] = 0;
@@ -105,7 +102,6 @@ namespace Gestore_di_Entrate.Modules
 
             foreach (DataPoint corrente in grafico.Series["uscite"].Points)
             {
-                Debug.WriteLine(corrente.AxisLabel + " " + corrente.YValues[0]);
                 if (corrente.AxisLabel.Equals(instance.Mese))
                 {
                     corrente.YValues[0] = 0;
