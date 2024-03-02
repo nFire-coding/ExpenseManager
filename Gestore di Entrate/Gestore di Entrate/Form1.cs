@@ -11,53 +11,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using Gestore_di_Entrate.Modules;
 
 namespace Gestore_di_Entrate
 {
     public partial class Form1 : Form
     {
+        private GestoreDati Dati;
         public Form1()
         {
             InitializeComponent();
-            initGrafico();
-
-
-        }
-
-        private void initGrafico()
-        {
-            List<string> mesi = new List<string> { "Gen", "Feb", "Mar", "Apr", "Mag", "Giu", "Lug", "Ago", "Set", "Ott", "Nov", "Dic" };
-            //init mesi
-            for(int i = 0; i < 12; i++)
-            {
-                graficoDati.Series["entrate"].Points.AddXY(mesi[i], 0);
-                graficoDati.Series["uscite"].Points.AddXY(mesi[i],0);
-            }
-
-            //Lettura da file dei dati
-            string[] righeFile = File.ReadAllLines("PERCORSO FILE");
-
-            foreach (string line in righeFile) {
-                string[] elementiRiga = line.Split(','); //TIPO, QUANTITA, MESE
-
-                foreach (DataPoint corrente in graficoDati.Series["entrate"].Points)
-                {
-                    if (corrente.AxisLabel.Equals(elementiRiga[2]))
-                    {   
-                        corrente.SetValueY(corrente.YValues[0] + double.Parse(elementiRiga[1]));
-                    }
-                }
-
-                foreach (DataPoint corrente in graficoDati.Series["uscite"].Points)
-                {
-                    if (corrente.AxisLabel.Equals(elementiRiga[2]))
-                    {
-                        corrente.SetValueY(corrente.YValues[0] + double.Parse(elementiRiga[1]));
-                    }
-                }
-            }
-            graficoDati.Update();
-            graficoDati.Refresh();
+            Dati = new GestoreDati(graficoDati);
         }
 
         private void acquisciSpesa_Click(object sender, EventArgs e)
@@ -71,33 +35,23 @@ namespace Gestore_di_Entrate
 
             //Entrata
             if (isEntrata.Checked) {
-
-                foreach (DataPoint corrente in graficoDati.Series["entrate"].Points)
-                {
-                    Debug.WriteLine(corrente.AxisLabel + " " + corrente.YValues[0]);
-                    if (corrente.AxisLabel.Equals(meseUtente.Text)) {
-                        corrente.YValues[0] = corrente.YValues[0] + valoreDellaSpesa;
-                    }
-                    //scrivi sul file AAA
-                }
+                var entrata = new Entrata();
+                entrata.Name = nomeDellaSpesa;
+                entrata.Value = valoreDellaSpesa;
+                entrata.Mese = meseUtente.Text;
+                Dati.AggiungiEntrata(entrata);
             }
             //Uscita
             if (isUscita.Checked)
             {
-
-                foreach (DataPoint corrente in graficoDati.Series["uscite"].Points)
-                {
-                    Debug.WriteLine(corrente.AxisLabel + " " + corrente.YValues[0]);
-                    if (corrente.AxisLabel.Equals(meseUtente.Text))
-                    {
-                        corrente.YValues[0] = corrente.YValues[0] + valoreDellaSpesa;
-                    }
-                }
+                var uscita = new Uscita();
+                uscita.Name = nomeDellaSpesa;
+                uscita.Value = valoreDellaSpesa;
+                uscita.Mese = meseUtente.Text;
+                Dati.AggiungiUscita(uscita);
             }
             
             meseUtente.Text = "";
-            graficoDati.Update();
-            graficoDati.Refresh();
         }
     }
 }

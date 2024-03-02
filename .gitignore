@@ -1,0 +1,11 @@
+﻿################################################################################
+# Il file gitignore è stato creato automaticamente da Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Gestore di Entrate/Gestore di Entrate/obj/Release
+*.cs
+/Gestore di Entrate/Gestore di Entrate/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/Gestore di Entrate/.vs/Gestore di Entrate/v17
+/Gestore di Entrate/.vs/Gestore di Entrate/FileContentIndex
+/Gestore di Entrate/Gestore di Entrate/.vs
